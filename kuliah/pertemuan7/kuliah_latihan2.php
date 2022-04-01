@@ -1,26 +1,26 @@
 <?php 
 
-// jangan lupa ganti img nya!!
-
 $mahasiswa = [
-    ["nama" => "Nadilla Ananda", 
-    "npm" => "213040076", 
-    "email" => "nputriananda21@gmail.com", 
-    "fakultas" => "Teknik Informatika"
-],
-[
-    "nama" => "Chino", 
-    "npm" => "213040099", 
-    "email" => "chinofelix123@gmail.com", 
-    "fakultas" => "Ilmu Fisika"
-],
-[
-    "nama" => "Felix",
-    "npm" => "213040100",
-    "email" => "felix123@gmail.com",
-    "fakultas" => "Astronomi"
-]
+      ["nama" => "Sharen Kamaya Palamba", 
+       "npm" => "213040087", 
+       "email" => "palambasharen15@gmail.com", 
+       "jurusan" => "Teknik Informatika",
+       "gambar" => "skp.png"
+      ],
+      ["nama" => "Abdiel Sarira", 
+       "npm" => "213050825", 
+       "email" => "diel25@gmail.com", 
+       "jurusan" => "Teknik Pertambangan",
+       "gambar" => "ass8.png"
+      ],
+      ["nama" => "Friskila Anugerah",
+       "npm" => "213060812",
+       "email" => "cici08@gmail.com",
+       "jurusan" => "Teknik Kimia",
+       "gambar" => "facp.png"
+      ]
 ];
+
 ?>
 
 <!doctype html>
@@ -35,94 +35,42 @@ $mahasiswa = [
 
     <title>Detail Mahasiswa</title>
   </head>
-  <body>
-      <div class="container">
-          <h1>Detail Mahasiswa</h1>
+  <style>
+      .foto {
+          width: auto;
+          height: 50px;
+      }
+  </style>
+    <body>
+        <div class="container">
+            <h1>Detail Mahasiswa</h1>
+
             <table class="table">
-    <thead>
-        <tr>
-        <th scope="col">#</th>
-        <th scope="col">Gambar</th>
-        <th scope="col">Nama</th>
-        <th scope="col">Aksi</th>
-        
-        </tr>
-    </thead>
-    <tbody>
+            <thead>
+                <tr>
+                <th scope="col">#</th>
+                <th scope="col">Gambar</th>
+                <th scope="col">Nama</th>
+                <th scope="col">Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php $no = 1; foreach($mahasiswa as $mhs) { ?>
+                  <tr>
+                    <th scope="row"> <?= $no++; ?> </th>
+                    <td><img src="img/<?php echo $mhs["gambar"]; ?>" class="rounded-circle foto" ></td>
+                    <td><?php echo $mhs["nama"] ?></td>
+                    <td>
+                        <a href="#" class="btn badge bg-warning">Edit</a>
+                        <a href="#" class="btn badge bg-danger">Delete</a>
+                        <a href="kuliah_latihan3.php?nama=<?= $mhs["nama"] ?>&npm=<?= $mhs["npm"] ?>&email=<?= $mhs["email"] ?>&jurusan=<?= $mhs["jurusan"] ?>&gambar=<?= $mhs["gambar"] ?>" class="btn btn-sm text-white bg-info">Detail</a>
+                    </td>
+                  </tr>
+                  <?php } ?>
+            </tbody>
+            </table>
+        </div>
 
-        <tr>
-        <th scope="row">1</th>
-        <td>
-            <img src="img/nyan1.png" height="50" class="rounded-circle">
-        </td>
-        <td>Sharen Kamaya Palamba</td>
-        <td>
-        <a href="" class="btn badge bg-warning">edit</a>
-            <a href="" class="btn badge bg-danger">delete</a>
-            <a href="kuliah_latihan3.php"></a>
-            <a href="" class="btn badge bg-info">detail</a>
-        </td>
-        </tr>
-
-        <tr>
-        <th scope="row">2</th>
-        <td>
-            <img src="img/kitten1.png" height="50" class="rounded-circle">
-        </td>
-        <td>Chino</td>
-        <td>
-        <a href="" class="btn badge bg-warning">edit</a>
-            <a href="" class="btn badge bg-danger">delete</a>
-            <a href="kuliah_latihan3.php"></a>
-            <a href="" class="btn badge bg-info">detail</a>
-        </td>
-        </tr>
-
-        <tr>
-        <th scope="row">3</th>
-        <td>
-            <img src="img/kitten2.png" height="50" class="rounded-circle">
-        </td>
-        <td>Mbik</td>
-        <td>
-        <a href="" class="btn badge bg-warning">edit</a>
-            <a href="" class="btn badge bg-danger">delete</a>
-            <a href="kuliah_latihan3.php"></a>
-            <a href="" class="btn badge bg-info">detail</a>
-        </td>
-        </tr>
-
-        <tr>
-        <th scope="row">4</th>
-        <td>
-            <img src="img/kitten3.png" height="50" class="rounded-circle">
-        </td>
-        <td>Kuroo</td>
-        <td>
-            <a href="" class="btn badge bg-warning">edit</a>
-            <a href="" class="btn badge bg-danger">delete</a>
-            <a href="kuliah_latihan3.php"></a>
-            <a href="" class="btn badge bg-info">detail</a>
-        </td>
-        </tr>
-
-        <tr>
-        <th scope="row">5</th>
-        <td>
-            <img src="img/kitten4.png" height="50" class="rounded-circle">
-        </td>
-        <td>Loki</td>
-        <td>
-            <a href="" class="btn badge bg-warning">edit</a>
-            <a href="" class="btn badge bg-danger">delete</a>
-            <a href="kuliah_latihan3.php"></a>
-            <a href="" class="btn badge bg-info">detail</a>
-        </td>
-        </tr>
-
-    </tbody>
-    </table>
-      </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
