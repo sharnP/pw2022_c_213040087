@@ -1,7 +1,7 @@
 <?php
 // $mahasiswa = [
-//     ["Nadilla Ananda", "213040076", "nputriananda21@gmail.com", "Teknik Informatika"],
-//     ["Chino", "213040999", "chino123@gmail.com", "Ilmu Fisika"]
+//  ["Sharen Kamaya Palamba", "213040087", "palambasharen15@gmail.com", "Teknik Informatika"],
+//  ["Yuko", "213040615", "yukoichr@gmail.com", "Biologi"]
 // ];
 
 // Array Associative
@@ -12,9 +12,9 @@ $mahasiswa = [
     [
         "nama" => "Chemistry", 
         "nrp" => "Paul Cook & The Chronicles", 
-        "email" => "Pop",
+        "email" => "Indie",
         "fakultas" => "2020",
-        "gambar" => "chemistry.png"
+        "gambar" => "paulcook.png"
     ],
     [
         "nama" => "Kaktus", 
@@ -27,7 +27,7 @@ $mahasiswa = [
         "nama" => "Ingkar", 
         "nrp" => "Tulus", 
         "email" => "Pop",
-        "fakultas" => "2018",
+        "fakultas" => "2020",
         "gambar" => "ingkar.png"
     ],
     [
@@ -39,22 +39,22 @@ $mahasiswa = [
     ],
     [
         "nama" => "Realistic", 
-        "nrp" => "Powfu", 
+        "nrp" => "Ouse", 
         "email" => "Pop",
         "fakultas" => "2020",
         "gambar" => "realistic.png"
     ],
     [
-        "nama" => "See you tomorrow", 
+        "nama" => "I'll Be Friends With You", 
         "nrp" => "Arash Buana", 
-        "email" => "Pop",
-        "fakultas" => "2019",
-        "gambar" => "tomorrow.png"
+        "email" => "Indie",
+        "fakultas" => "2020",
+        "gambar" => "arashbuana.png"
     ],
     [
         "nama" => "Whatever You Want", 
         "nrp" => "Finding Hope", 
-        "email" => "Pop",
+        "email" => "Indie",
         "fakultas" => "2019",
         "gambar" => "whatever.png"
     ],
@@ -68,17 +68,32 @@ $mahasiswa = [
     [
         "nama" => "Apocalypse", 
         "nrp" => "Cigarettes After S", 
-        "email" => "",
-        "fakultas" => "",
+        "email" => "Indie",
+        "fakultas" => "2020",
         "gambar" => "apocalypse.png"
     ],
     [
-        "nama" => "", 
-        "nrp" => "", 
-        "email" => "",
-        "fakultas" => "",
-        "gambar" => ".png"
+        "nama" => "LoveSick", 
+        "nrp" => "BoyWithUke", 
+        "email" => "Pop",
+        "fakultas" => "2021",
+        "gambar" => "lovesick.png"
+    ],
+    [
+        "nama" => "IDK You Yet", 
+        "nrp" => "Alexander 23", 
+        "email" => "Indie",
+        "fakultas" => "2021",
+        "gambar" => "idkyouyet.png"
+    ],
+    [
+        "nama" => "Long Drives", 
+        "nrp" => "BoyWithUke", 
+        "email" => "Pop",
+        "fakultas" => "2021",
+        "gambar" => "longdrives.png"
     ]
+
 
 ];
 
@@ -95,16 +110,20 @@ $mahasiswa = [
             }
         </style>
         <body>
-            <h1>Daftar Mahasiswa</h1>
+            <h1>
+                <font face="Garamond">Daftar Musik :</font><br>
+            </h1>
             <?php foreach( $mahasiswa as $mhs ) : ?>
             <ul>
                 <li>
                     <img src="img/<?= $mhs["gambar"]; ?>" class="foto">
                 </li>
-                <li>Nama        : <?= $mhs["nama"]; ?></li>
+                <pre>
+                <li>Judul       : <?= $mhs["nama"]; ?></li>
                 <li>Artis       : <?= $mhs["nrp"]; ?></li>
                 <li>Genre       : <?= $mhs["email"]; ?></li>
                 <li>Tahun Rilis : <?= $mhs["fakultas"]; ?></li>
+                </pre>
             </ul>
             <?php endforeach; ?>
         </body>
