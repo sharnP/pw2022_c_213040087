@@ -13,9 +13,9 @@ $mahasiswa = [
         "jurusan" => "Teknik Informatika"
     ],
     [
-        "nama" => "Dia orang", 
-        "npm" => "21304000", 
-        "email" => "orangji@gmail.com", 
+        "nama" => "Yuko", 
+        "npm" => "213040615", 
+        "email" => "yukoichr@gmail.com", 
         "jurusan" => "Teknik Informatika"
     ]
 ];
@@ -52,7 +52,7 @@ $mahasiswa = [
     <tr>
       <th scope="row">1</th>
       <td>
-          <img src="img/aku.png" height="50" class="rounded-circle">
+          <img src="img/org.png" height="50" class="rounded-circle">
       </td>
       <td>Sharen Kamaya Palamba'</td>
       <td>213040087</td>
@@ -66,7 +66,7 @@ $mahasiswa = [
       <tr>
       <th scope="row">2</th>
       <td>
-          <img src="img/siapa.png" height="50" class="rounded-circle">
+          <img src="img/mereka.png" height="50" class="rounded-circle">
       </td>
       <td>Yuko Ichiro</td>
       <td>213040615</td>
@@ -78,30 +78,35 @@ $mahasiswa = [
       </td>
       </tr>
 
+      <tr>
       <th scope="row">3</th>
       <td>
-          <img src="img/mereka.png" height="50" class="rounded-circle">
+          <img src="img/facp.png" height="50" class="rounded-circle">
       </td>
-      <td>Cici Friskila</td>
-      <td>213040812</td>
-      <td>friskilaacp@gmail.com</td>
+      <td>Friskila Anugerah</td>
+      <td>213060812</td>
+      <td>cici08@gmail.com</td>
       <td>Pendidikan Kedokteran</td>
       <td>
           <a href="" class="btn badge bg-warning">edit</a>
           <a href="" class="btw badge bg-warning">delete</a>
       </td>
+      </tr>
+
+      <tr>
       <th scope="row">4</th>
       <td>
-          <img src="img/balik.png" height="50" class="rounded-circle">
+          <img src="img/srr.png" height="50" class="rounded-circle">
       </td>
-      <td>Diel Sarira</td>
-      <td>213040825</td>
-      <td>sarirabdiel@gmail.com</td>
-      <td>Teknik Perminyakan</td>
+      <td>Abdiel Sarira</td>
+      <td>213050825</td>
+      <td>diel25@gmail.com</td>
+      <td>Teknik Pertambangan</td>
       <td>
           <a href="" class="btn badge bg-warning">edit</a>
           <a href="" class="btw badge bg-warning">delete</a>
       </td>
+      </tr>
 
     </tr>
   </tbody>

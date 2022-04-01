@@ -5,7 +5,7 @@
 $mahasiswa = [
     ["Sharen Kamaya Palamba", "213040087", "palambasharen15@gmail.com", "Teknik Informatika"],
     ["Wina Agustina", "213040093", "winaagustina@gmail.com", "Teknik Informatika"],
-    ["Dia Orang", "21304000", "orangji@gmail.com", "Teknik Informatika"]
+    ["Yuko", "213040615", "yukoichr@gmail.com", "Teknik Informatika"]
 ];
 
 // var_dump($mahasiswa[1][3]);
